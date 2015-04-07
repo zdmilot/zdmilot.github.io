@@ -724,7 +724,7 @@
 /* Intro Photography                                                                        */
 /*********************************************************************************/
 
-	#intro {
+	#introphoto {
 		background: url('images/overlay.png'), url('../images/twointro.JPG');
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
@@ -747,7 +747,7 @@
 /* One Photography                                                                           */
 /*********************************************************************************/
 
-	#one {
+	#onephoto {
 		background: url('images/overlay.png'), url('../images/twoone.jpg');
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
@@ -769,7 +769,7 @@
 /* Two Photography                                                                          */
 /*********************************************************************************/
 
-	#two {
+	#twophoto {
 		background: url('images/overlay.png'), url('../images/twotwo.jpg');
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
@@ -792,7 +792,7 @@
 /* Three Photography                                                                          */
 /*********************************************************************************/
 
-	#three {
+	#threephoto {
 		background: url('images/overlay.png'), url('../images/onebook.jpg');
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
