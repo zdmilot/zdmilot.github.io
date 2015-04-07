@@ -782,7 +782,7 @@
 /*********************************************************************************/
 
 	#two {
-		background: url('images/overlay.png'), url('../images/two.JPG');
+		background: url('images/overlay.png'), url('../images//fulls/camera.jpg');
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
@@ -803,7 +803,7 @@
 /* Two Music                                                                           */
 /*********************************************************************************/
 
-	#two {
+	#twomusic {
 		background: url('images/overlay.png'), url('../images/onetwo.JPG');
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
@@ -837,7 +837,7 @@
 /*********************************************************************************/
 
 	#threephoto {
-		background: url('images/overlay.png'), url('../images/twobook.jpg');
+		background: url('images/overlay.png'), url('../images/fulls/twobook.jpg');
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
@@ -848,54 +848,15 @@
 /* Work                                                                          */
 /*********************************************************************************/
 
-	#work {
+	#work1 {
+		background: url('images/overlay.png'), url('../images/work.jpg');
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
 	}
-	
-		#work .row.images {
-		}
-	
-			#work .row.images .image {
-				position: relative;
-				top: 0;
-				left: 0;
-				opacity: 1.0;
-			
-				-moz-transition: all 1s ease;
-				-webkit-transition: all 1s ease;
-				-o-transition: all 1s ease;
-				-ms-transition: all 1s ease;
-				transition: all 1s ease;
-				
-				-moz-transform: translateZ(0);
-				-webkit-transform: translateZ(0);
-				-o-transform: translateZ(0);
-				-ms-transform: translateZ(0);
-				transform: translateZ(0);
-			}
-		
-			#work .row.images.inactive {
-			}
 
-				#work .row.images.inactive .image {
-					opacity: 0;
-				}
-			
-				#work .row.images.inactive .image.from-left {
-					left: -14em;
-				}
-			
-				#work .row.images.inactive .image.from-right {
-					left: 14em;
-				}
-			
-				#work .row.images.inactive .image.from-top {
-					top: -7em;
-				}
-			
-				#work .row.images.inactive .image.from-bottom {
-					top: 7em;
-				}
-			
+
+	
 /*********************************************************************************/
 /* Contact                                                                       */
 /*********************************************************************************/
