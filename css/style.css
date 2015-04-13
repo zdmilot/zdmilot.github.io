@@ -945,11 +945,33 @@
 	}
 
 /*********************************************************************************/
-/* six Work                                                                          */
+/* Six Work                                                                          */
 /*********************************************************************************/
 
 	#sixwork {
 		background: url('images/overlay.png'), url('../images/sixwork.jpg');
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
+
+/*********************************************************************************/
+/* Seven Work                                                                          */
+/*********************************************************************************/
+
+	#sevenwork {
+		background: url('images/overlay.png'), url('../images/workharvard.jpg');
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
+
+/*********************************************************************************/
+/* Eight Work                                                                          */
+/*********************************************************************************/
+
+	#eightwork {
+		background: url('images/overlay.png'), url('../images/workmma.jpg');
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
