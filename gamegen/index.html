@@ -37,9 +37,9 @@
       
           <div class="icon-block">
             <h2 class="center" style="color:#333"><i class="mdi-av-new-releases"></i></h2>
-            <h5 class="center">Feature one</h5>
+            <h5 class="center">Enter info here:</h5>
 
-            <p align="center" class="light">Enter info here:</p>
+            <p align="center" class="light">Your output:</p>
           </div>
         </div>
 
@@ -47,20 +47,20 @@
 <div class="container section scrollspy" id="contactus">
 	<div class="section">
 <div class="row">
-		
+
   <form class="col s8">
   
     <div class="row">
       <div class="input-field col s6">
-        <input id="number" type="number" class="validate" pattern="[0-9]*">
-        <label for="number">Rolled Amount</label>
+        <input id="number" type="number" class="validate" pattern="[0-9]*" value="<?php echo $perroll;?>">
+        <label for="number">Percentage Roll</label>
       </div>
 	 </div>
 	 
 	<div class="row">
       <div class="input-field col s6">
-        <input id="number" type="number" class="validate" pattern="[0-9]*">
-        <label for="number">Level</label>
+        <input id="number" type="number" class="validate" pattern="[A-Za-z0-9-]*" value="<?php echo $lvl;?>">
+        <label for="number">Power Level</label>
       </div>
     </div><!--row-->
 	 <div>
