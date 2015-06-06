@@ -9,6 +9,77 @@
   <!-- CSS  -->
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script>
+function myFunction() {
+	var x = document.getElementById("rndroll")
+    x.innerHTML = Math.floor((Math.random() * 100) + 1);
+	
+    var level;
+	var nameElement = document.getElementById("lvl");
+    var lvl = nameElement.value;
+    if (lvl <= 1 && lvl >= 1 && x <= 1 && x >= 10) {
+        level = "Major Fail";
+    } else if (lvl <= 2 && lvl >= 7 && x <= 1 && x >= 3) {
+        level = "Major Fail";
+    } else if (lvl <= 2 && lvl >= 7 && x <= 4 && x >= 10) {
+        level = "Fail";
+	} else if (lvl <= 8 && lvl >= 15 && x <= 1 && x >= 2) {
+        level = "Major Fail";
+	} else if (lvl <= 8 && lvl >= 15 && x <= 3 && x >= 10) {
+        level = "Fail";
+    } else if (lvl <= 16 && lvl >= 24 && x <= 1 && x >= 1) {
+        level = "Major Fail";
+	} else if (lvl <= 16 && lvl >= 24 && x <= 2 && x >= 8) {
+        level = "Fail";
+	} else if (lvl <= 16 && lvl >= 24 && x <= 9 && x >= 10) {
+        level = "Success";
+	} else if (lvl <= 25 && lvl >= 31 && x <= 1 && x >= 7) {
+        level = "Fail";
+	} else if (lvl <= 25 && lvl >= 31 && x <= 8 && x >= 10) {
+        level = "Success";
+	} else if (lvl <= 32 && lvl >= 40 && x <= 1 && x >= 5) {
+        level = "Fail";
+	} else if (lvl <= 32 && lvl >= 40 && x <= 6 && x >= 10) {
+        level = "Success";
+	} else if (lvl <= 41 && lvl >= 49 && x <= 1 && x >= 4) {
+        level = "Fail";
+	} else if (lvl <= 41 && lvl >= 49 && x <= 5 && x >= 10) {
+        level = "Success";
+	} else if (lvl <= 50 && lvl >= 57 && x <= 1 && x >= 2) {
+        level = "Fail";
+	} else if (lvl <= 50 && lvl >= 57 && x <= 3 && x >= 10) {
+        level = "Success";
+	} else if (lvl <= 58 && lvl >= 65 && x <= 1 && x >= 1) {
+        level = "Fail";
+	} else if (lvl <= 58 && lvl >= 65 && x <= 2 && x >= 10) {
+        level = "Success";
+	} else if (lvl <= 66 && lvl >= 74 && x <= 1 && x >= 9) {
+        level = "Success";
+	} else if (lvl <= 66 && lvl >= 74 && x <= 10 && x >= 10) {
+        level = "Major Success";
+	} else if (lvl <= 75 && lvl >= 84 && x <= 1 && x >= 6) {
+        level = "Success";
+	} else if (lvl <= 75 && lvl >= 84 && x <= 7 && x >= 10) {
+        level = "Major Success";
+	} else if (lvl <= 85 && lvl >= 94 && x <= 1 && x >= 3) {
+        level = "Success";
+	} else if (lvl <= 85 && lvl >= 94 && x <= 4 && x >= 10) {
+        level = "Major Success";
+	} else if (lvl <= 95 && lvl >= 99 && x <= 1 && x >= 1) {
+        level = "Success";
+	} else if (lvl <= 95 && lvl >= 99 && x <= 2 && x >= 9) {
+        level = "Major Success";
+	} else if (lvl <= 95 && lvl >= 99 && x <= 10 && x >= 10) {
+        level = "Legendary Success";
+	} else if (lvl <= 100 && lvl >= 100 && x <= 1 && x >= 7) {
+        level = "Major Success";
+	} else if (lvl <= 100 && lvl >= 100 && x <= 8 && x >= 10) {
+		level = "Legendary Success";
+	}
+	
+	document.getElementById("best").innerHTML = level;
+}
+</script>
 </head>
 <body>
 <div id="navbar" class="navbar-fixed scrollspy">
@@ -42,38 +113,16 @@
         </div>
 
 
-<div class="container section scrollspy" id="contactus">
-	<div class="section">
-<div class="row">
+<p>Enter your Power Level:</p><br>
+<input id="lvl" type="number">
+<br>
+<br>
+<button onclick="myFunction()">Enter</button>
+<br><br>
+Your result is:<p id="best"></p>
+Your roll is:<p id="rndroll"></p>
 
-  <form class="col s8">
-  
-    <div class="row">
-      <div class="input-field col s6">
-        <input id="number" type="number" class="validate" pattern="[0-9]*" value="<?php echo $perroll;?>">
-        <label for="number">Percentage Roll</label>
-      </div>
-	 </div>
-	 
-	<div class="row">
-      <div class="input-field col s6">
-        <input id="number" type="number" class="validate" pattern="[A-Za-z0-9-]*" value="<?php echo $lvl;?>">
-        <label for="number">Power Level</label>
-      </div>
-    </div><!--row-->
-	 <div>
-		<a class="waves-effect waves-light btn purple lighten-1">Generate Results<i class="mdi-content-send right"></i></a>
-	 </div>
-	 <div>
-		<a class="waves-effect waves-light btn purple lighten-1">Random Results<i class="mdi-content-send right"></i></a>
-	 </div>
-     </form>
 
-     
-</div>
- <p align="center" class="light">Your output:</p> 
-	</div>
-</div>
    
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
