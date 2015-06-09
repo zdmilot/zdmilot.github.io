@@ -7,11 +7,10 @@
 <meta http-equiv="Content-Script-Type" content="text/javascript">
 <script type="text/javascript">
 function calcBMI(){
-var height=prompt("Enter your height in inches.");
-var weight=prompt("Enter your weight in pounds.");
-var BMI=(weight/(height*height))*703;
+var roll=prompt("Enter your Percentage Roll.");
+var plvl=prompt("Enter your Power Level.");
 var status;
-	if(BMI<=18.5){
+	if(roll==1 && plvl==10){
 		status='Underweight';
 	}
 	else if(BMI<=24.9){
