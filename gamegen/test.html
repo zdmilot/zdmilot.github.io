@@ -9,12 +9,11 @@ function myFunction() {
     var level;
 	var nameElement = document.getElementById("lvl");
     var lvl = nameElement.value;
-    if (lvl <= 1 && lvl >= 10 && x <= 1 && x >= 100) {
+    if (lvl >= 10) {
         level = "less than 10";
-    } else if (lvl <= 11 && lvl >= 20 && x <= 1 && x >= 100) {
+    } else {
         level = "more than 10";
 	}
-	
 	document.getElementById("best").innerHTML = level;
 }
 </script>
