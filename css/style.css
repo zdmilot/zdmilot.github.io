@@ -23,7 +23,7 @@ img{width:100%;}
 /*end reset*/
 body {
  background: url(../v2/img/header-bg.JPG) no-repeat;
-	background-size: auto 200%;
+	background-size: 100% auto;
  font-family: 'Open Sans', sans-serif;
 }
 .wrap
