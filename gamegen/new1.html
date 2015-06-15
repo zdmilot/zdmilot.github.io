@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script>
+function myFunction() {
+    
+	
+	var theName = undefined
+	var nameElement = document.getElementById("lvl");
+    var theName = nameElement.value;
+    document.getElementById("someDiv").innerHTML += theName;
+	
+	var greeting;
+	if (x < 50) {
+		greeting = "less than 50";
+	} else if (x > 50) {
+		greeting = "greater than 50";
+	}
+	document.getElementById("great").innerHTML = greeting;
+}
+</script>
+
+</head>
+<body>
+
+<p>Put in your power level</p>
+<input id="lvl" type="number">
+<br>
+<button onclick="myFunction()">Try it</button>
+
+	<br><br>
+		Your roll was:
+		<div id="demo"></div>
+	<br>
+		Your Power Level:
+		<div id="someDiv"></div>
+	<br>
+		Greater than 50:
+		<div id="great"></div>
+  
+</body>
+</html>
