@@ -56,7 +56,7 @@
           </div>
         </div>
 
-<input id="level" type="number" max="10" min="1" maxlength="2" />
+<input id="level" type="number" max="26" min="1" maxlength="2" />
 <br>
 <br>
 <button class="waves-effect waves-light btn purple lighten-1" id="enterButton">Enter<i class="mdi-content-send right"></i></button>
@@ -103,8 +103,10 @@ Your roll is:<p id="rndroll"></p>
     var lvl = getEl("level").value;
     console.log("lvl " + lvl);
       if (x === 1) {
-        if (lvl >= 1 && lvl <= 10) {
+        if (lvl >= 1 && lvl <= 12) {
         level = "Major Fail";
+        } else if (lvl >= 13 && lvl <= 26) {
+        level = "Fail";
         } else {
         err("The level value is out of range.");
         }
@@ -112,8 +114,12 @@ Your roll is:<p id="rndroll"></p>
       else if (x >= 2 && x <= 7) {
         if (lvl >= 1 && lvl <= 3) {
         level = "Major Fail";
-        } else if (lvl >= 4 && lvl <= 10) {
+        } else if (lvl >= 4 && lvl <= 13) {
         level = "Fail";
+        } else if (lvl >= 14 && lvl <= 24) {
+        level = "Success";
+        } else if (lvl >= 25 && lvl <= 26) {
+        level = "Major Success";
         } else {
         err("The level value is out of range.");
         }
@@ -121,19 +127,26 @@ Your roll is:<p id="rndroll"></p>
       else if (x >= 8 && x <= 15) {
         if (lvl >= 1 && lvl <= 2) {
         level = "Major Fail";
-        } else if (lvl >= 3 && lvl <= 10) {
+        } else if (lvl >= 3 && lvl <= 11) {
         level = "Fail";
+        } else if (lvl >= 12 && lvl <= 22) {
+        level = "Success";
+        } else if (lvl >= 23 && lvl <= 26) {
+        level = "Major Success";
         } else {
         err("The level value is out of range.");
         }
       }
+	  
       else if (x >= 16 && x <= 24) {
         if (lvl == 1) {
         level = "Major Fail";
         } else if (lvl >= 2 && lvl <= 8) {
         level = "Fail";
-        } else if (lvl >= 9 && lvl <= 10) {
+        } else if (lvl >= 9 && lvl <= 21) {
         level = "Success";
+        } else if (lvl >= 22 && lvl <= 26) {
+        level = "Major Success";
         } else {
         err("The level value is out of range.");
         }
@@ -141,8 +154,12 @@ Your roll is:<p id="rndroll"></p>
       else if (x >= 25 && x <= 31) {
         if (lvl >= 1 && lvl <= 7) {
         level = "Fail";
-        } else if (lvl >= 8 && lvl <= 10) {
+        } else if (lvl >= 8 && lvl <= 19) {
         level = "Success";
+        } else if (lvl >= 20 && lvl <= 25) {
+        level = "Major Success";
+        } else if (lvl == 26) {
+        level = "Legendary Success";
         } else {
         err("The level value is out of range.");
         }
@@ -150,8 +167,12 @@ Your roll is:<p id="rndroll"></p>
       else if (x >= 32 && x <= 40) {
         if (lvl >= 1 && lvl <= 5) {
         level = "Fail";
-        } else if (lvl >= 6 && lvl <= 10) {
+        } else if (lvl >= 6 && lvl <= 17) {
         level = "Success";
+        } else if (lvl >= 18 && lvl <= 23) {
+        level = "Major Success";
+        } else if (lvl >= 24 && lvl <= 26) {
+        level = "Legendary Success";
         } else {
         err("The level value is out of range.");
         }
@@ -159,8 +180,12 @@ Your roll is:<p id="rndroll"></p>
       else if (x >= 41 && x <= 49) {
         if (lvl >= 1 && lvl <= 4) {
         level = "Fail";
-        } else if (lvl >= 5 && lvl <= 10) {
+        } else if (lvl >= 5 && lvl <= 15) {
         level = "Success";
+        } else if (lvl >= 16 && lvl <= 20) {
+        level = "Major Success";
+        } else if (lvl >= 21 && lvl <= 26) {
+        level = "Legendary Success";
         } else {
         err("The level value is out of range.");
         }
@@ -168,8 +193,12 @@ Your roll is:<p id="rndroll"></p>
       else if (x >= 50 && x <= 57) {
         if (lvl >= 1 && lvl <= 2) {
         level = "Fail";
-        } else if (lvl >= 3 && lvl <= 10) {
+        } else if (lvl >= 3 && lvl <= 11) {
         level = "Success";
+        } else if (lvl >= 12 && lvl <= 18) {
+        level = "Major Success";
+        } else if (lvl >= 19 && lvl <= 26) {
+        level = "Legendary Success";
         } else {
         err("The level value is out of range.");
         }
@@ -179,6 +208,10 @@ Your roll is:<p id="rndroll"></p>
         level = "Fail";
         } else if (lvl >= 2 && lvl <= 10) {
         level = "Success";
+        } else if (lvl >= 11 && lvl <= 16) {
+        level = "Major Success";
+        } else if (lvl >= 17 && lvl <= 26) {
+        level = "Legendary Success";
         } else {
         err("The level value is out of range.");
         }
@@ -186,8 +219,10 @@ Your roll is:<p id="rndroll"></p>
       else if (x >= 66 && x <= 74) {
         if (lvl >= 1 && lvl <= 9) {
         level = "Success";
-        } else if (lvl == 10) {
+        } else if (lvl >= 10 && lvl <= 14) {
         level = "Major Success";
+        } else if (lvl >= 15 && lvl <= 26) {
+        level = "Legendary Success";
         } else {
         err("The level value is out of range.");
         }
@@ -195,8 +230,10 @@ Your roll is:<p id="rndroll"></p>
       else if (x >= 75 && x <= 84) {
         if (lvl >= 1 && lvl <= 6) {
         level = "Success";
-        } else if (lvl >= 7 && lvl <= 10) {
+        } else if (lvl >= 7 && lvl <= 13) {
         level = "Major Success";
+        } else if (lvl >= 15 && lvl <= 26) {
+        level = "Legendary Success";
         } else {
         err("The level value is out of range.");
         }
@@ -204,8 +241,10 @@ Your roll is:<p id="rndroll"></p>
       else if (x >= 85 && x <= 94) {
         if (lvl >= 1 && lvl <= 3) {
         level = "Success";
-        } else if (lvl >= 4 && lvl <= 10) {
+        } else if (lvl >= 4 && lvl <= 11) {
         level = "Major Success";
+        } else if (lvl >= 12 && lvl <= 26) {
+        level = "Legendary Success";
         } else {
         err("The level value is out of range.");
         }
@@ -215,7 +254,7 @@ Your roll is:<p id="rndroll"></p>
         level = "Success";
         } else if (lvl >= 2 && lvl <= 9) {
         level = "Major Success";
-        } else if (lvl == 10) {
+        } else if (lvl >= 10 && lvl <= 26) {
         level = "Legendary Success";
         } else {
         err("The level value is out of range.");
@@ -224,7 +263,7 @@ Your roll is:<p id="rndroll"></p>
       else if (x == 100) {
         if (lvl >= 1 && lvl <= 7) {
         level = "Major Success";
-        } else if (lvl >= 8 && lvl <= 10) {
+        } else if (lvl >= 8 && lvl <= 26) {
         level = "Legendary Success";
         } else {
         err("The level value is out of range.");
@@ -240,7 +279,7 @@ Your roll is:<p id="rndroll"></p>
       doCalculate();
     } catch (e) {
       getEl("lvl").innerHTML = "" + e + "<br />\n" +
-          "Level should stay between 1 and 10.";
+          "Level should stay between 1 and 26.";
       getEl("rndroll").innerHTML = "";
       throw e;
     }
