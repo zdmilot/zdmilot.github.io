@@ -2315,3 +2315,13 @@ if (typeof jQuery === 'undefined') {
   })
 
 }(jQuery);
+
+
+  // Gallary slider js
+  // ==============
+  
+  $(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide"
+  });
+});
