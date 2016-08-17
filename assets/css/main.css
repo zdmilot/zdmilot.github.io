@@ -3030,12 +3030,12 @@
 /* Banner */
 
 	#banner {
-		padding: 10em 0 4.75em 0 ;
+		padding: 10em 0 12em 0 ;
 	}
 
 		#banner .inner {
 			margin: 0 auto;
-			width: 55em;
+			width: 34em;
 		}
 
 		#banner .logo {
